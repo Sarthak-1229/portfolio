@@ -25,7 +25,9 @@ export default function SkillsCluster({
   const mat = useRef<THREE.MeshStandardMaterial>(null);
 
   const clusters = useMemo(() => {
-    const groups = Object.values(data.skills as Record<string, string[]>);
+    const groups = Object.values(
+      data.skills as unknown as Record<string, string[]>
+    );
     return groups.map((skills, gi) => {
       const ga = (gi / groups.length) * Math.PI * 2;
       const center = new THREE.Vector3(Math.cos(ga) * 2.4, Math.sin(ga) * 2.4, 0);

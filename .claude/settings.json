@@ -10,7 +10,12 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" --max-time 8 http://localhost:3000/)",
       "Bash(node -e \"const d=require\\('./content/data.json'\\); console.log\\('title:',JSON.stringify\\(d.title\\)\\); console.log\\('name:',d.name\\); console.log\\('edu0:',JSON.stringify\\(d.education[0]\\)\\);\")",
       "Bash(curl -s -o /tmp/home.html -w \"HTTP %{http_code}\\\\n\" --max-time 10 http://localhost:3000/)",
-      "Bash(curl -s -o /tmp/home.html -w \"HTTP %{http_code}\\\\n\" --max-time 12 http://localhost:3000/)"
+      "Bash(curl -s -o /tmp/home.html -w \"HTTP %{http_code}\\\\n\" --max-time 12 http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" --max-time 12 http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"HTTP %{http_code}\\\\n\" --max-time 12 \"http://localhost:3000/\")",
+      "Bash(curl -s -o /tmp/home.html -w \"HTTP %{http_code}\\\\n\" --max-time 15 http://localhost:3000/)",
+      "Bash(grep -oE \"// experience|// projects|// skills|// contact|Project VAYU|Download Résumé\" /tmp/home.html)",
+      "Bash(npm run *)"
     ]
   }
 }

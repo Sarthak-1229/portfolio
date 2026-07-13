@@ -15,7 +15,9 @@ const LABELS: Record<string, string> = {
 
 /** Skills — docks at the clustered node-ring. */
 export default function Skills({ at }: { at: number }) {
-  const groups = Object.entries(data.skills as Record<string, string[]>);
+  const groups = Object.entries(
+    data.skills as unknown as Record<string, string[]>
+  );
   return (
     <Panel at={at} side="left">
       <PanelCard hoverId="skills">

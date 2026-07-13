@@ -1,21 +1,16 @@
-import SceneHost from "@/components/SceneHost";
-import Sections from "@/components/Sections";
+import ExperienceRouter from "@/components/ExperienceRouter";
 import CursorRing from "@/components/CursorRing";
-import ProgressRail from "@/components/ProgressRail";
 
 /**
- * Persistent fixed 3D scene (SceneHost) + docking DOM overlays (Sections) + custom
- * cursor + a thin flight-progress rail. The tall spacer is the scroll runway.
+ * ExperienceRouter picks the cinematic camera-flight build (capable desktops) or the
+ * flowing fallback (touch / narrow / reduced-motion, also the SSR baseline). CursorRing
+ * self-disables on touch/reduced, so it's safe to mount globally.
  */
 export default function Home() {
   return (
     <>
-      <SceneHost />
-      <Sections />
-      <ProgressRail />
+      <ExperienceRouter />
       <CursorRing />
-      {/* scroll runway — ~one viewport of travel per waypoint */}
-      <div style={{ height: "1100vh" }} aria-hidden />
     </>
   );
 }
