@@ -1,0 +1,276 @@
+{
+  "name": "Sarthak Bhosale",
+  "title": "Computer Engineering Student \u00b7 AI & ML \u00b7 Cybersecurity \u00b7 Full-Stack",
+  "location": "Pune, Maharashtra, India",
+  "contact": {
+    "email": "sarthak.b.1204@gmail.com",
+    "phone": "+91 7715073009",
+    "linkedin": "https://linkedin.com/in/sarthak-bhosale-8666b2336",
+    "github": "https://github.com/Sarthak-1229",
+    "resume": "/resume.pdf"
+  },
+  "summary": "Tech enthusiast and engineering student passionate about building intelligent, secure, and connected systems. Hands-on experience from an AI internship at Accenture and a Cybersecurity virtual internship at Cisco, with proficiency spanning machine learning, Python, full-stack MERN development, IoT systems, and network security. Thrives on complex problems and leading collaborative teams to deliver innovative, real-world solutions.",
+  "experience": [
+    {
+      "role": "Data Analyst Intern",
+      "org": "Bluestock.in",
+      "date": "Jun 2026 \u2013 Present",
+      "current": true,
+      "points": [
+        "Ongoing data analyst internship (started 20 Jun 2026)",
+        "PLACEHOLDER: add specific responsibilities/tools once available"
+      ]
+    },
+    {
+      "role": "AI Intern",
+      "org": "Accenture \u00b7 Pune, Maharashtra",
+      "date": "May \u2013 Jul 2025",
+      "points": [
+        "Learned and applied core ML algorithms: Regression, SVM, Decision Trees, Random Forest",
+        "Worked with clustering and deep learning concepts including ANN, CNN, RNN",
+        "Practical exposure to Computer Vision and Reinforcement Learning",
+        "Built a strong foundation in AI/ML and data-driven problem solving"
+      ]
+    },
+    {
+      "role": "Cybersecurity Virtual Intern",
+      "org": "Cisco Networking Academy \u00b7 Pune",
+      "date": "Jun \u2013 Jul 2025",
+      "points": [
+        "Vulnerability assessments identifying threats, weaknesses, attack vectors",
+        "Configured and tested firewalls, IDS, access control policies",
+        "Network and packet tracing using Cisco tools",
+        "Studied malware types, phishing techniques, cyber risk management frameworks",
+        "Secure communication protocols and network security best practices"
+      ]
+    },
+    {
+      "role": "Freelancer",
+      "org": "Independent",
+      "date": "May 2024 \u2013 Present",
+      "points": [
+        "Data cleaning, analysis, and data entry gigs",
+        "Website tester across various client projects"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech \u2014 Computer Engineering (Software Engineering)",
+      "school": "MIT Academy of Engineering, Pune",
+      "date": "2024 \u2013 2028"
+    },
+    {
+      "degree": "HSC \u2014 Higher Secondary Certificate",
+      "school": "Sanjay Ghodawat Junior College, Kolhapur",
+      "date": "2022 \u2013 2024"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project VAYU",
+      "tagline": "IoT-Based Air Quality Detection & Purification System",
+      "tags": [
+        "IoT",
+        "AI",
+        "ESP32",
+        "Hardware"
+      ],
+      "github": "https://github.com/Sarthak-1229/Project-Vayu",
+      "points": [
+        "ESP32-based hardware monitoring AQI, gas levels, dust, temperature, connected to an auto-activating air purifier/ionizer",
+        "Companion app with an AI chatbot discussing respiratory health, analyzing historical AQI trends, suggesting personalized remedies",
+        "AI analyzer engine processes pollution data over time to proactively alert users"
+      ],
+      "achievement": "1st Prize \u2014 GDG Nirmaan 4.0 Hackathon 2026 (MIT AoE)",
+      "hasResearchPaper": true,
+      "researchPaperNote": "PLACEHOLDER: link/title/abstract of the Project Vayu research paper to add",
+      "image": "/images/projects/vayu.png"
+    },
+    {
+      "name": "PLUTO AI",
+      "tagline": "Cyber pet desktop companion",
+      "tags": [
+        "Electron",
+        "JavaScript",
+        "AI"
+      ],
+      "github": "https://github.com/Sarthak-1229/PLUTO_AI",
+      "points": [
+        "Desktop overlay pet that stays on-screen (Electron app)",
+        "Analyzes on-screen code and helps debug/explain it",
+        "Shares facts and news, holds conversation with the user"
+      ],
+      "image": "/images/projects/pluto-ai.png"
+    },
+    {
+      "name": "Vyorius Task Manager",
+      "tagline": "Corporate task management web app \u2014 Vyorius Drones internship assessment",
+      "tags": [
+        "Full-Stack",
+        "MERN",
+        "Neubrutalism",
+        "Auth",
+        "Encryption"
+      ],
+      "github": "https://github.com/Sarthak-1229/Vyorius_Drones-",
+      "points": [
+        "Full backend with login/signup and strong encryption",
+        "Google Tasks-style corporate task management",
+        "Neubrutalist UI design"
+      ],
+      "image": "/images/projects/vyorius.png"
+    },
+    {
+      "name": "Brixe",
+      "tagline": "Academic helper app",
+      "tags": [
+        "Productivity",
+        "Gmail API",
+        "Moodle",
+        "AI"
+      ],
+      "points": [
+        "Summarizes emails automatically",
+        "Sets up task lists by connecting with Moodle and Gmail"
+      ],
+      "image": "/images/projects/brixe.png"
+    },
+    {
+      "name": "SAFAR",
+      "tagline": "Smart Bus Journey Companion",
+      "tags": [
+        "Web App",
+        "Geolocation"
+      ],
+      "points": [
+        "Transit tracking app with proximity alarm 350m / 2 min before arrival at nearest stop",
+        "Improves accessibility for elderly and new travelers via geolocation and real-time alerts"
+      ],
+      "image": "/images/projects/safar.png"
+    },
+    {
+      "name": "AI-Powered Resume Builder",
+      "tagline": "Datathon 2025 project",
+      "tags": [
+        "MERN",
+        "LLM",
+        "Full-Stack"
+      ],
+      "points": [
+        "Full-stack MERN platform using LLM prompt engineering to auto-generate tailored resumes from user input"
+      ],
+      "achievement": "2nd Runner-Up \u2014 GirlScript Datathon 2025 (sponsored by Worqhat, Preskilit & Kalp Studio)",
+      "image": "/images/projects/resume-builder.png"
+    },
+    {
+      "name": "IoT Drone Delivery & Fire-Suppression System",
+      "tagline": "Web-controlled emergency response drone",
+      "tags": [
+        "IoT",
+        "Drones",
+        "Web-controlled"
+      ],
+      "points": [
+        "Remote package delivery",
+        "Aerial deployment of fire extinguisher balls for high-altitude emergencies"
+      ],
+      "image": "/images/projects/drone-delivery.png"
+    }
+  ],
+  "skills": {
+    "languages": [
+      "Python",
+      "C",
+      "C++",
+      "Java"
+    ],
+    "ai_ml": [
+      "Machine Learning",
+      "Deep Learning",
+      "CNNs",
+      "ANNs",
+      "RNNs",
+      "Scikit-Learn",
+      "NumPy",
+      "Pandas",
+      "Matplotlib"
+    ],
+    "web_fullstack": [
+      "MERN Stack",
+      "React",
+      "Node.js",
+      "MongoDB",
+      "Express"
+    ],
+    "cybersecurity": [
+      "Kali Linux & Linux",
+      "Network Security",
+      "Vulnerability Testing",
+      "Firewall Configuration",
+      "Network & Packet Tracing",
+      "IDS/IPS Concepts",
+      "Threat & Risk Analysis"
+    ],
+    "iot": [
+      "ESP32 / Microcontrollers",
+      "Sensor Networks",
+      "AI-driven Analytics"
+    ],
+    "tools": [
+      "Git & GitHub",
+      "Docker",
+      "Postman",
+      "LLM Prompt Engineering",
+      "Cursor AI"
+    ]
+  },
+  "languages_spoken": [
+    {
+      "name": "Marathi",
+      "level": "Native"
+    },
+    {
+      "name": "English",
+      "level": "Advanced (C1)"
+    },
+    {
+      "name": "Hindi",
+      "level": "Advanced (C1)"
+    }
+  ],
+  "accomplishments": [
+    "1st Prize \u2014 GDG Nirmaan 4.0 Hackathon 2026 (MIT AoE): Project Vayu",
+    "2nd Runner-Up \u2014 GirlScript Datathon 2025 (MIT AoE): AI-powered resume builder"
+  ],
+  "certifications": [
+    {
+      "date": "Apr 2026",
+      "name": "1st Prize \u2013 Nirmaan 4.0 GDG Hackathon (MIT Academy of Engineering)"
+    },
+    {
+      "date": "Feb 2025",
+      "name": "2nd Runner Up \u2013 GirlScript DATATHON 2025 (AI-powered resume builder)"
+    },
+    {
+      "date": "Dec 2025",
+      "name": "L&T EduTech \u2013 Node.js and Backend Development with Git"
+    },
+    {
+      "date": "Apr 2026",
+      "name": "Completed All Claude-Anthropic Courses"
+    },
+    {
+      "date": "Jul 2025",
+      "name": "Summer Internship Certificate \u2013 Accenture (AI & ML)"
+    },
+    {
+      "date": "Mar 2025",
+      "name": "Python Essentials 1 & 2 \u2013 Cisco / PCAP Certification Track"
+    },
+    {
+      "date": "Nov 2024",
+      "name": "Cisco Networking Academy \u2013 Introduction to Kali Linux Basics"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0b0f14;
+  --surface: #131a22;
+  --signal: #4cc9f0;
+  --alert: #ffb454;
+  --text: #e8edf2;
+  --muted: #8891a3;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: var(--font-plex-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Thin custom scrollbar to match instrument-panel feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+::-webkit-scrollbar-thumb {
+  background: #223040;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2c3e52;
+}
+
+/* Focus ring — visible signal-cyan, consistent across interactive elements */
+:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Faint oscilloscope grid used behind sections */
+.signal-grid {
+  background-image: linear-gradient(
+      to right,
+      rgba(76, 201, 240, 0.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(76, 201, 240, 0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Amber "live" pulse for current role */
+@keyframes live-pulse {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.35;
+    transform: scale(0.7);
+  }
+}
+.live-dot {
+  animation: live-pulse 1.8s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .live-dot {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
