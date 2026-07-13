@@ -1,17 +1,21 @@
 import SceneHost from "@/components/SceneHost";
-import ProgressHUD from "@/components/ProgressHUD";
+import Sections from "@/components/Sections";
+import CursorRing from "@/components/CursorRing";
+import ProgressRail from "@/components/ProgressRail";
 
 /**
- * STEP 1: empty 3D scene + camera flight only. The tall spacer gives ScrollTrigger
- * its travel distance; DOM section overlays get layered in later steps.
+ * Persistent fixed 3D scene (SceneHost) + docking DOM overlays (Sections) + custom
+ * cursor + a thin flight-progress rail. The tall spacer is the scroll runway.
  */
 export default function Home() {
   return (
     <>
       <SceneHost />
-      <ProgressHUD />
-      {/* scroll runway — ~5 viewport heights to fly the placeholder path */}
-      <div style={{ height: "500vh" }} aria-hidden />
+      <Sections />
+      <ProgressRail />
+      <CursorRing />
+      {/* scroll runway — ~one viewport of travel per waypoint */}
+      <div style={{ height: "1100vh" }} aria-hidden />
     </>
   );
 }

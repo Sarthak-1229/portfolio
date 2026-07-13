@@ -5,6 +5,7 @@ import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useScene } from "@/lib/store";
+import { waypoints } from "@/lib/waypoints";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -53,9 +54,9 @@ export default function ScrollController() {
       scrub: 1, // 1s catch-up lag → smooth accel/decel, not stepped
       onUpdate: (self) => {
         setProgress(self.progress);
-        // active waypoint = nearest segment, drives which DOM panel shows
-        const wpCount = 4; // segments align to waypoints; overlays refine later
-        setActive(Math.round(self.progress * (wpCount - 1)));
+        // active waypoint = nearest dock, drives which DOM panel shows
+        const last = waypoints.length - 1;
+        setActive(Math.round(self.progress * last));
       },
     });
 
