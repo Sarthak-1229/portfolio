@@ -6,7 +6,7 @@ export const alt = `${data.name} — AI/ML · Cybersecurity · Full-Stack`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-// Static hero card: dark bg, name in mono, role tagline, signal-cyan accent line.
+// Static hero card: void bg, name, role tagline, nebula-gradient accent line (v2 tokens).
 export default async function OGImage() {
   const mono = await fetch(
     "https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-mono@5.0.13/files/ibm-plex-mono-latin-600-normal.woff"
@@ -21,13 +21,13 @@ export default async function OGImage() {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
-          background: "#0B0F14",
+          background: "#08060f",
           padding: "90px",
           fontFamily: "IBM Plex Mono",
           position: "relative",
         }}
       >
-        {/* top signal accent bar */}
+        {/* top nebula accent bar */}
         <div
           style={{
             position: "absolute",
@@ -35,16 +35,16 @@ export default async function OGImage() {
             left: 0,
             right: 0,
             height: 6,
-            background: "#4CC9F0",
+            background: "linear-gradient(100deg, #ff3ea5, #ffb454)",
           }}
         />
-        <div style={{ display: "flex", color: "#8891A3", fontSize: 26, letterSpacing: 6 }}>
+        <div style={{ display: "flex", color: "#9a93a6", fontSize: 26, letterSpacing: 6 }}>
           PORTFOLIO
         </div>
         <div
           style={{
             display: "flex",
-            color: "#E8EDF2",
+            color: "#f2ede9",
             fontSize: 96,
             fontWeight: 600,
             marginTop: 18,
@@ -58,15 +58,14 @@ export default async function OGImage() {
             display: "flex",
             width: 220,
             height: 4,
-            background: "#4CC9F0",
+            background: "linear-gradient(100deg, #ff3ea5, #ffb454)",
             marginTop: 30,
-            boxShadow: "0 0 24px #4CC9F0",
           }}
         />
         <div
           style={{
             display: "flex",
-            color: "#4CC9F0",
+            color: "#8fd9ff",
             fontSize: 38,
             marginTop: 34,
             letterSpacing: 1,

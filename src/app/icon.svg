@@ -1,5 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#0B0F14"/>
-  <rect x="1" y="1" width="62" height="62" rx="11" fill="none" stroke="#4CC9F0" stroke-opacity="0.35" stroke-width="1"/>
-  <text x="32" y="33" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="30" font-weight="700" letter-spacing="-1" text-anchor="middle" dominant-baseline="central" fill="#4CC9F0">SB</text>
+  <defs>
+    <linearGradient id="sb" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff3ea5"/>
+      <stop offset="1" stop-color="#ffb454"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="12" fill="#08060f"/>
+  <rect x="1" y="1" width="62" height="62" rx="11" fill="none" stroke="#8fd9ff" stroke-opacity="0.3" stroke-width="1"/>
+  <text x="32" y="34" font-family="'Space Grotesk', ui-sans-serif, sans-serif" font-size="30" font-weight="700" letter-spacing="-1" text-anchor="middle" dominant-baseline="central" fill="url(#sb)">SB</text>
 </svg>
