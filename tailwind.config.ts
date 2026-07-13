@@ -5,16 +5,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        bg: "var(--bg)",
-        surface: "var(--surface)",
-        signal: "var(--signal)",
-        alert: "var(--alert)",
+        void: "var(--void)",
+        nebula: {
+          start: "var(--nebula-start)",
+          end: "var(--nebula-end)",
+        },
+        ice: "var(--ice)",
         text: "var(--text)",
         muted: "var(--muted)",
       },
       fontFamily: {
-        mono: ["var(--font-plex-mono)", "monospace"],
-        sans: ["var(--font-plex-sans)", "sans-serif"],
+        display: ["var(--font-display)", "system-ui", "sans-serif"],
+        sans: ["var(--font-body)", "system-ui", "sans-serif"],
+        mono: ["var(--font-mono)", "ui-monospace", "monospace"],
+      },
+      backgroundImage: {
+        nebula:
+          "linear-gradient(100deg, var(--nebula-start), var(--nebula-end))",
       },
     },
   },

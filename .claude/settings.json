@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e ' *)",
+      "Bash(npm install *)",
+      "Bash(node -e \"const p=require\\('./package.json'\\);console.log\\('postproc:',p.dependencies['@react-three/postprocessing'],'| lenis:',p.dependencies.lenis,'| zustand:',p.dependencies.zustand,'| postprocessing:',p.dependencies.postprocessing\\)\")",
+      "Bash(cd d:/claude_code_projects/portfolio && rm -f src/components/Hero.tsx src/components/Experience.tsx src/components/Projects.tsx src/components/Skills.tsx src/components/Contact.tsx src/components/Nav.tsx src/components/Reveal.tsx src/components/ScrollReveals.tsx src/components/Section.tsx src/components/SignalGraph.tsx && echo \"v1 components removed\" && ls src/components/ 2>/dev/null; echo \"---remaining lib---\"; ls src/lib/)",
+      "Bash(netstat -ano)",
+      "Bash(awk '{print $5}')"
+    ]
+  }
+}

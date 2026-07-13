@@ -3,81 +3,86 @@
 @tailwind utilities;
 
 :root {
-  --bg: #0b0f14;
-  --surface: #131a22;
-  --signal: #4cc9f0;
-  --alert: #ffb454;
-  --text: #e8edf2;
-  --muted: #8891a3;
+  --void: #08060f;
+  --nebula-start: #ff3ea5;
+  --nebula-end: #ffb454;
+  --ice: #8fd9ff;
+  --text: #f2ede9;
+  --muted: #9a93a6;
 }
 
-html {
-  scroll-behavior: smooth;
+html,
+body {
+  background-color: var(--void);
+  color: var(--text);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--text);
-  font-family: var(--font-plex-sans), sans-serif;
-  -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
 
-/* Thin custom scrollbar to match instrument-panel feel */
-::-webkit-scrollbar {
-  width: 8px;
+/* Lenis smooth-scroll wiring */
+html.lenis,
+html.lenis body {
+  height: auto;
 }
-::-webkit-scrollbar-track {
-  background: var(--bg);
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
 }
-::-webkit-scrollbar-thumb {
-  background: #223040;
-  border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: #2c3e52;
+.lenis.lenis-stopped {
+  overflow: hidden;
 }
 
-/* Focus ring — visible signal-cyan, consistent across interactive elements */
+/* The fixed R3F canvas sits behind all DOM overlays */
+.scene-canvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* The nebula gradient signature — use sparingly (hero name, section titles, callouts) */
+.nebula-text {
+  background: linear-gradient(100deg, var(--nebula-start), var(--nebula-end));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* HUD/instrument label texture */
+.hud-label {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ice);
+}
+
+/* Custom cursor: hide native on fine-pointer devices only */
+@media (hover: hover) and (pointer: fine) {
+  * {
+    cursor: none;
+  }
+}
+
 :focus-visible {
-  outline: 2px solid var(--signal);
+  outline: 2px solid var(--ice);
   outline-offset: 3px;
   border-radius: 2px;
 }
 
-/* Faint oscilloscope grid used behind sections */
-.signal-grid {
-  background-image: linear-gradient(
-      to right,
-      rgba(76, 201, 240, 0.04) 1px,
-      transparent 1px
-    ),
-    linear-gradient(to bottom, rgba(76, 201, 240, 0.04) 1px, transparent 1px);
-  background-size: 40px 40px;
-}
-
-/* Amber "live" pulse for current role */
-@keyframes live-pulse {
-  0%,
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 0.35;
-    transform: scale(0.7);
-  }
-}
-.live-dot {
-  animation: live-pulse 1.8s ease-in-out infinite;
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
-  }
-  .live-dot {
-    animation: none;
   }
   *,
   *::before,
@@ -85,5 +90,9 @@ body {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
+  }
+  /* reduced-motion users get native cursor back */
+  * {
+    cursor: auto !important;
   }
 }
