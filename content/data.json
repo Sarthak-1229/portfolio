@@ -85,7 +85,8 @@
       "achievement": "1st Prize \u2014 GDG Nirmaan 4.0 Hackathon 2026 (MIT AoE)",
       "hasResearchPaper": true,
       "researchPaperNote": "PLACEHOLDER: link/title/abstract of the Project Vayu research paper to add",
-      "image": "/images/projects/vayu.png"
+      "image": "/images/projects/vayu.png",
+      "form3d": "cluster of small pulsing spheres orbiting a central core shape, evoking sensor nodes around a purifier"
     },
     {
       "name": "PLUTO AI",
@@ -101,7 +102,8 @@
         "Analyzes on-screen code and helps debug/explain it",
         "Shares facts and news, holds conversation with the user"
       ],
-      "image": "/images/projects/pluto-ai.png"
+      "image": "/images/projects/pluto-ai.png",
+      "form3d": "small companion orb that visibly follows the camera with a slight lag, like a desktop pet"
     },
     {
       "name": "Vyorius Task Manager",
@@ -119,7 +121,8 @@
         "Google Tasks-style corporate task management",
         "Neubrutalist UI design"
       ],
-      "image": "/images/projects/vyorius.png"
+      "image": "/images/projects/vyorius.png",
+      "form3d": "grid of small cubes, evenly spaced, evoking a task board"
     },
     {
       "name": "Brixe",
@@ -134,7 +137,8 @@
         "Summarizes emails automatically",
         "Sets up task lists by connecting with Moodle and Gmail"
       ],
-      "image": "/images/projects/brixe.png"
+      "image": "/images/projects/brixe.png",
+      "form3d": "two small interlocking rings (mail + tasks) slowly counter-rotating"
     },
     {
       "name": "SAFAR",
@@ -147,7 +151,8 @@
         "Transit tracking app with proximity alarm 350m / 2 min before arrival at nearest stop",
         "Improves accessibility for elderly and new travelers via geolocation and real-time alerts"
       ],
-      "image": "/images/projects/safar.png"
+      "image": "/images/projects/safar.png",
+      "form3d": "a thin moving line/path with a single traveling node, evoking a transit route"
     },
     {
       "name": "AI-Powered Resume Builder",
@@ -161,7 +166,8 @@
         "Full-stack MERN platform using LLM prompt engineering to auto-generate tailored resumes from user input"
       ],
       "achievement": "2nd Runner-Up \u2014 GirlScript Datathon 2025 (sponsored by Worqhat, Preskilit & Kalp Studio)",
-      "image": "/images/projects/resume-builder.png"
+      "image": "/images/projects/resume-builder.png",
+      "form3d": "a stack of thin flat panels that shuffle/reorder slowly"
     },
     {
       "name": "IoT Drone Delivery & Fire-Suppression System",
@@ -175,7 +181,8 @@
         "Remote package delivery",
         "Aerial deployment of fire extinguisher balls for high-altitude emergencies"
       ],
-      "image": "/images/projects/drone-delivery.png"
+      "image": "/images/projects/drone-delivery.png",
+      "form3d": "a small quadcopter-like wireframe form hovering with slight bob"
     }
   ],
   "skills": {
